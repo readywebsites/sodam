@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-(sw*7*05=9ojb3=x1z+7igcrfozbhl2%92r+b5=d99bxf#x*o-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
 
 # Application definition
@@ -90,12 +90,12 @@ WSGI_APPLICATION = 'homeoayurcart.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'homeoayurdb',
-        'USER': '#',
-        'PASSWORD': '#',
-        'HOST': 'localhost',
-        'PORT': '',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'django_project',
+        'USER': 'sodamuser',
+        'PASSWORD': '12345',
+        'HOST': 'localhost',  # or '127.0.0.1'
+        'PORT': '5432',
     }
 }
 
